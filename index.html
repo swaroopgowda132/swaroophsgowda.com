@@ -1,91 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swaroop H S - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      color: #fff;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+      font-weight: 400;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin: 3rem 0;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    /* About Section */
+    #about p {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skills-grid div {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .skills-grid h4 {
+      margin-bottom: 1rem;
+      color: #3b82f6;
+    }
+
+    .skills-grid ul {
+      list-style: none;
+    }
+
+    .skills-grid li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Projects Section */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h4 {
+      color: #3b82f6;
+      margin-bottom: 0.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Contact */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background-color: #111827;
+      color: #d1d5db;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Swaroop H S</h1>
-            <h2>Creative Front-End Developer specializing in minimalist UI/UX.</h2>
-            <p class="summary">Hello! I'm a 5-year experienced developer with a passion for clean, efficient, and user-centric solutions. I'm actively seeking challenging roles to apply my expertise in React and modern JavaScript.</p>
+  <header>
+    <!-- Replace the image URL below with your own photo -->
+    <img src="https://via.placeholder.com/150" alt="Swaroop H S">
+    <h1>Swaroop H S</h1>
+    <h2>BCA Student | Full Stack Developer</h2>
+    <p>Graduating in April 2026 | Passionate about building clean, user-friendly web applications.</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h3 class="section-title">About Me</h3>
+      <p>
+        Hello! I'm <strong>Swaroop H S</strong>, currently pursuing my <strong>Bachelor of Computer Applications (BCA)</strong> and set to graduate in <strong>April 2026</strong>.  
+        I have completed a <strong>Certificate Course in Full Stack Development</strong>, gaining hands-on experience with modern web technologies including React, Node.js, and Python.  
+        I’m passionate about creating efficient, responsive, and visually appealing websites that provide great user experiences.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h3 class="section-title">Skills & Tools</h3>
+      <div class="skills-grid">
+        <div>
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Bootstrap / Tailwind CSS</li>
+          </ul>
         </div>
-        </header>
-
-    <main>
-        <section id="work" class="section">
-            <h3 class="section-title">Featured Work</h3>
-            
-            <div class="project-grid">
-                <article class="project-card">
-                    <h4>Project 1: E-commerce Dashboard Redesign</h4>
-                    <p class="role">**Role:** Lead UI Developer</p>
-                    <p>Redesigned a legacy e-commerce analytics dashboard, focusing on data clarity and accessibility.</p>
-                    <p class="result">**Result:** Increased user task completion rate by 22% and reduced helpdesk calls by 15%.</p>
-                    <p class="tech">**Tech Used:** React, Tailwind CSS, D3.js</p>
-                    <a href="#" target="_blank" class="button">View Case Study &rarr;</a>
-                </article>
-
-                <article class="project-card">
-                    <h4>Project 2: Mobile Recipe App Backend</h4>
-                    <p class="role">**Role:** Backend Engineer</p>
-                    <p>Built a scalable and secure RESTful API using Django for a high-traffic mobile recipe application.</p>
-                    <p class="result">**Result:** Successfully handled 10,000 concurrent users during peak launch week with 99.9% uptime.</p>
-                    <p class="tech">**Tech Used:** Python, Django, PostgreSQL, AWS Lambda</p>
-                    <a href="#" target="_blank" class="button">View on GitHub &rarr;</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills" class="section dark-bg">
-            <h3 class="section-title">Skills & Expertise</h3>
-            <div class="skills-grid">
-                <div>
-                    <h4>Core Development</h4>
-                    <ul class="skill-list">
-                        <li>JavaScript (ES6+)</li>
-                        <li>React & Redux</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Python & Django</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Design & Tools</h4>
-                    <ul class="skill-list">
-                        <li>Figma & Sketch</li>
-                        <li>Tailwind CSS / SASS</li>
-                        <li>Git & GitHub</li>
-                        <li>RESTful APIs</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Other / Soft Skills</h4>
-                    <ul class="skill-list">
-                        <li>Technical Writing</li>
-                        <li>Agile/Scrum</li>
-                        <li>Mentoring</li>
-                        <li>Problem-Solving</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <h3 class="section-title">Get in Touch</h3>
-        <p>I am currently open to new opportunities. Let's build something great!</p>
-        <div class="contact-links">
-            <a href="mailto:your.email@example.com" class="footer-link">📧 your.email@example.com</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="footer-link">🔗 LinkedIn</a>
-            <a href="https://github.com/yourprofile" target="_blank" class="footer-link">🧑‍💻 GitHub</a>
+        <div>
+          <h4>Backend</h4>
+          <ul>
+            <li>Node.js / Express.js</li>
+            <li>Python / Django</li>
+            <li>REST APIs</li>
+            <li>MySQL / MongoDB</li>
+          </ul>
         </div>
-        <p class="copyright">&copy; 2025 [Your Name]. Built with simplicity.</p>
-    </footer>
+        <div>
+          <h4>Other</h4>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Figma</li>
+            <li>Responsive Design</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3 class="section-title">Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Portfolio Website</h4>
+          <p>Personal responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="button">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h4>Online Shopping App</h4>
+          <p>Developed a mini e-commerce platform with product listing, cart, and user authentication.</p>
+          <a href="#" class="button">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h4>Blog Management System</h4>
+          <p>Created a blog app with CRUD operations using Node.js and MongoDB.</p>
+          <a href="#" class="button">View Project →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h3 class="section-title">Get in Touch</h3>
+    <p>I'm open to internships and collaboration opportunities. Let's connect!</p>
+    <div class="contact-links">
+      <a href="mailto:swaroopg363@gmail.com">📧 swaroopg363@gmail.com</a>
+      <a href="tel:+917795137269">📞 +91 77951 37269</a>
+      <a href="https://linkedin.com/in/swaroophs" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/swaroophs" target="_blank">🧑‍💻 GitHub</a>
+    </div>
+    <p>© 2025 Swaroop H S. Built with ❤️ using HTML & CSS.</p>
+  </footer>
 
 </body>
 </html>
